@@ -1,0 +1,298 @@
+*, *::after, *::before{
+     margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.center{
+    text-align: center;
+}
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#navbar::before{
+    content: '';
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 98.9vw;
+    bottom: 0;
+    opacity: .8;
+    z-index: -1;
+}
+
+/* Navigation Bar : Logo Styling */
+#logo{
+    margin: 4px 7px;
+    padding: 5px 15px 5px 15px;
+}
+
+#logo img{
+    height: 60px;
+    /* width: 60px; */
+    margin: 4px 4px;
+    border-radius: 50%;
+}
+
+/* Navigation Bar: List Styling*/
+
+#navbar ul{
+    display: flex; 
+    font-family: 'Baloo Bhai', cursive;   
+}
+
+#navbar ul li{
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+#navbar ul li a{
+    display: block;
+    border-radius: 20px;
+    color: white;
+    padding: 5px 40px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    background-color:white;
+    color: black;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 100px;
+    height: 663px;
+    justify-content: center;
+    align-items: center; 
+}
+
+#home::before{
+    content: '';
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHr2hR8iBZn7Z7kq4cshO4YHgflath0MFSgA&usqp=CAU) no-repeat center center/cover;
+    position: absolute;
+    height: 758px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: .89;
+    z-index: -1;
+}
+
+.h-primary{
+    font-size: 3.7rem;
+    color: #fff; 
+    padding: 20px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-content{
+    font-size: 2.4rem;
+    color: #fff;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-button{
+    padding: 6px 30px;
+    color: #fff;
+    text-align: center;  
+    border-radius: 240px;
+    margin: 20px;
+    background-color: rgb(161, 25, 25);
+    font-size: 1.4rem;
+    border: 2px solid #fff;
+    font-family: 'Bree Serif', serif;
+    cursor: pointer;
+}
+
+/* Services Section */
+
+#services::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .89;
+    z-index: -1;
+}
+
+#s-content{
+    margin: 0px 40px 40px 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.box{
+    border: 2px solid brown;
+    padding: 35px;
+    width: 300px;
+    margin: 45px;
+    margin-bottom : 0;
+    padding-bottom : 10;
+    background: rgb(238, 237, 237);
+    border-radius: 30px;
+    
+}
+
+.box  img{
+    height: 200px;
+    margin: auto;
+    display:block;
+    border-radius: 50%;
+}
+
+.s-primary{
+    /* margin: 81px 0 20px 0; */
+    font-size: 3.7rem;
+    color: #000;
+    padding: 12px 0 0px 0;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+.s-secondary{
+    font-size: 2.4rem;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+.box p{
+    padding-top: 10px;
+    font-size: 1rem;
+    text-align: justify;
+    font-family: 'Bree Serif', serif;
+}
+
+#clients{
+    height : 400px;
+}
+
+#clients::before{
+    content: '';
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuKIO3Y4H0HNGPrBBxfOnW4ShTKPRiwa4ZZw&usqp=CAU) no-repeat center center/cover;
+    position: absolute;
+    height: 54%;
+    width: 100%;
+    opacity: .6;
+    z-index: -1;
+}
+
+.c-primary {
+    font-size: 3.85rem;
+    color: #000;
+    padding: 12px 0 0px 0;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#c-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+.client-item{
+    margin: 18px;
+    padding: 34px;
+}
+.client-item img{
+    height: 150px;
+    /* width: 100px ; */
+}
+
+#contact{
+    height:738px;
+}
+
+#contact::before{
+    content: '';
+    position: absolute;
+    background: url(https://image.shutterstock.com/image-photo/businessman-on-blurred-touching-manuscript-260nw-492865171.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    z-index: -1;
+}
+
+.co-primary {
+    font-size: 3.85rem;
+    color: #000;
+    padding: 12px 0 0px 0;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#co-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#co-content form{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact label{
+    padding-bottom: 18px;
+    padding-top: 18px;
+    margin: 4px;
+    font-size: 1.4rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#contact input{
+    width: 600px;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+
+#contact button{
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 10px;
+    /* margin: auto; */
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    background: rgba(223, 220, 220, 0.5);
+    color: #000;
+    align-items: center;
+}
+
+#message{
+    height: 250px;
+}
+
+#footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2px 10px;
+    font-family: 'Baloo Bhai', cursive;   
+    /* margin: 3px 15px; */
+    text-align: center;
+    font-size: 15px;
+}
